@@ -19,6 +19,16 @@ $border: 1px solid lighten( $color, 50% );
                     -webkit-transition: all 0.2s ease;
                     -o-transition: all 0.2s ease;
                     transition: all 0.2s ease;
+                    border: solid $color;
+                    border-width: 0 3px 3px 0;
+                    display: inline-block;
+                    padding: 3px;
+                    &.right {
+                        -webkit-transform: rotate(-45deg);
+                        -ms-transform: rotate(-45deg);
+                        -o-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+                    }
                 }
             }
             h3 {
@@ -43,10 +53,10 @@ $border: 1px solid lighten( $color, 50% );
                 border-bottom: $border;
                 .icon {
                     i {
-                        -webkit-transform: rotate(90deg);
-                        -ms-transform: rotate(90deg);
-                        -o-transform: rotate(90deg);
-                        transform: rotate(90deg);
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        -o-transform: rotate(45deg);
+                        transform: rotate(45deg);
                     }
                 }
             }
