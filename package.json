@@ -8,6 +8,10 @@
     "es6",
     "scss"
   ],
+  "repository": {
+    "type" : "git",
+    "url": "https://github.com/maykinayki/mn-accordion.git"
+  },
   "author": "mike <maykinaykii@gmail.com>",
   "license": "MIT",
   "scripts": {
