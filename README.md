@@ -50,50 +50,50 @@ By using bower or CDN you can also use the standalone UMD build by including `pa
 <body>
 
     <div class="mn-accordion" id="accordion">
-
-        <!--Accordion item-->
-        <div class="accordion-item">
-            <div class="accordion-heading">
-                <h3>Section 1</h3>
-                <div class="icon">
-                    <i class="arrow right"></i>
+    
+            <!--Accordion item-->
+            <div class="accordion-item">
+                <div class="accordion-heading">
+                    <h3>Section 1</h3>
+                    <div class="icon">
+                        <i class="arrow right"></i>
+                    </div>
+                </div>
+                <div class="accordion-content">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 </div>
             </div>
-            <div class="accordion-content">
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-        </div>
-        <!--Accordion item-->
-
-        <!--Accordion item-->
-        <div class="accordion-item">
-            <div class="accordion-heading">
-                <h3>Section 2</h3>
-                <div class="icon">
-                    <i class="fa fa-chevron-right"></i>
+            <!--Accordion item-->
+    
+            <!--Accordion item-->
+            <div class="accordion-item">
+                <div class="accordion-heading">
+                    <h3>Section 2</h3>
+                    <div class="icon">
+                        <i class="arrow right"></i>
+                    </div>
+                </div>
+                <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 </div>
             </div>
-            <div class="accordion-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-        </div>
-        <!--Accordion item-->
-
-        <!--Accordion item-->
-        <div class="accordion-item">
-            <div class="accordion-heading">
-                <h3>Section 3</h3>
-                <div class="icon">
-                    <i class="fa fa-chevron-right"></i>
+            <!--Accordion item-->
+    
+            <!--Accordion item-->
+            <div class="accordion-item">
+                <div class="accordion-heading">
+                    <h3>Section 3</h3>
+                    <div class="icon">
+                        <i class="arrow right"></i>
+                    </div>
+                </div>
+                <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 </div>
             </div>
-            <div class="accordion-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
+            <!--Accordion item-->
+    
         </div>
-        <!--Accordion item-->
-
-    </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
     <script src="path/to/bower_components/mn-accordion/dist/js/mn-accordion.min.js"></script>
