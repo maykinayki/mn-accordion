@@ -10,12 +10,6 @@ Live demo: [maykinayki.github.io/mn-accordion](http://maykinayki.github.io/mn-ac
 
 ## Installation
 
-Using bower
-
-```js
-bower install mn-accordion --save
-```
-
 Using yarn
 
 ```js
@@ -35,27 +29,25 @@ import MNAccordion from 'mn-accordion';
 import 'mn-accordion/dist/css/mn-accordion.css';
 ```
 
-By using bower you can also use the standalone UMD build by including `path/to/bower_components/mn-accordion/dist/js/mn-accordion.min.js` and `path/to/bower_components/mn-accordion/dist/css/mn-accordion.min.css` in your page. If you do this you'll also need to include the only dependency `jQuery` with version bigger than `1.6`. For example:
+Using bower
 
-```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
-<script src="path/to/bower_components/mn-accordion/dist/js/mn-accordion.min.js"></script>
-
-<link rel="stylesheet" href="path/to/bower_components/mn-accordion/dist/css/mn-accordion.min.css">
-
-<script>
-    (function () {
-        var accordion_1 = new Accordion(document.getElementById("accordion"), {
-            collapsible: false
-        });
-    })();
-</script>
+```js
+bower install mn-accordion --save
 ```
-
 
 ### HTML markup
 
+By using bower or CDN you can also use the standalone UMD build by including `path/to/bower_components/mn-accordion/dist/js/mn-accordion.min.js` and `path/to/bower_components/mn-accordion/dist/css/mn-accordion.min.css` in your page.
+ <br>
+ You also need to include `jQuery` globally with version bigger than `1.6`.
+
 ```html
+
+<head>
+    <link rel="stylesheet" href="path/to/bower_components/mn-accordion/dist/css/mn-accordion.min.css">
+    ...
+</head>
+<body>
 
     <div class="mn-accordion" id="accordion">
 
@@ -102,6 +94,19 @@ By using bower you can also use the standalone UMD build by including `path/to/b
         <!--Accordion item-->
 
     </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+    <script src="path/to/bower_components/mn-accordion/dist/js/mn-accordion.min.js"></script>
+    
+    <script>
+        (function () {
+            var accordion_1 = new Accordion(document.getElementById("accordion"), {
+                collapsible: false
+            });
+        })();
+    </script>
+    
+</body>
 
 ```
 
@@ -117,6 +122,11 @@ By using bower you can also use the standalone UMD build by including `path/to/b
 | slideSpeed | `Integer` | **200** | Slide up and down speed |
 | slideDownFn | `Function` | slideDownFn(el, slideSpeed){ <br> &nbsp;&nbsp;&nbsp;$(el).slideDown(slideSpeed); <br>} | Slide down function. We are using jQuery *slideDown* as default. You can override it if you are not using jQuery |
 | slideUpFn | `Function` | slideUpFn(el, slideSpeed){ <br> &nbsp;&nbsp;&nbsp;$(el).slideUp(slideSpeed); <br>} | Slide down function. We are using jQuery *slideUp* as default. You can override it if you are not using jQuery |
+
+# TODO
+
+1. Remove jQuery dependency - The only dependency for this package is jQuery. We are using it for .slideDown() and .slideUp() methods
+2. Create .slideUp() and .slideDown() methods in pure vanilla JS. We are open for this contribution
 
 # License
 
