@@ -1,6 +1,6 @@
 {
   "name": "mn-accordion",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple and beautiful accordion with es6 and scss",
   "main": "dist/js/mn-accordion.js",
   "keywords": [
@@ -9,7 +9,7 @@
     "scss"
   ],
   "repository": {
-    "type" : "git",
+    "type": "git",
     "url": "https://github.com/maykinayki/mn-accordion.git"
   },
   "author": "mike <maykinaykii@gmail.com>",
@@ -33,6 +33,5 @@
     "http-server": "^0.10.0",
     "node-sass": "^4.5.3"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
