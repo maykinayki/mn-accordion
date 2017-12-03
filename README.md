@@ -56,7 +56,7 @@ By using bower or CDN you can also use the standalone UMD build by including `pa
             <div class="accordion-heading">
                 <h3>Section 1</h3>
                 <div class="icon">
-                    <i class="fa fa-chevron-right"></i>
+                    <i class="arrow right"></i>
                 </div>
             </div>
             <div class="accordion-content">
