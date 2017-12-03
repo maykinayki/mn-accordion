@@ -1,0 +1,34 @@
+{
+  "name": "mn-accordion",
+  "version": "1.0.0",
+  "description": "simple and beautiful accordion with es6 and scss",
+  "main": "dist/js/mn-accordion.js",
+  "keywords": [
+    "accordion",
+    "es6",
+    "scss"
+  ],
+  "author": "mike <maykinaykii@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build-css": "./node_modules/node-sass/bin/node-sass --output-style=compressed --include-path scss src/scss/index.scss dist/css/mn-accordion.min.css && ./node_modules/node-sass/bin/node-sass --output-style=expanded --include-path scss src/scss/index.scss dist/css/mn-accordion.css",
+    "watch-css": "npm run build-css && ./node_modules/node-sass/bin/node-sass --output-style=compressed -w --include-path scss src/scss/index.scss dist/css/mn-accordion.css",
+    "build-js": "BABEL_ENV=production ./node_modules/.bin/babel src/js/index.js --out-file dist/js/mn-accordion.min.js && ./node_modules/.bin/babel  src/js/index.js --out-file dist/js/mn-accordion.js",
+    "watch-js": "npm run build-js && ./node_modules/.bin/babel src/js/index.js --watch --out-file dist/js/mn-accordion.js",
+    "build": "npm run build-js && npm run build-css",
+    "start": "./node_modules/.bin/http-server ./"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-minify": "^0.2.0",
+    "chokidar": "^1.7.0",
+    "http-server": "^0.10.0",
+    "node-sass": "^4.5.3"
+  },
+  "dependencies": {
+  }
+}

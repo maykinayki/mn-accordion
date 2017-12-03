@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Accordion</title>
+
+    <link rel="stylesheet" href="dist/css/demo.css">
+    <link rel="stylesheet" href="dist/css/mn-accordion.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="mn-acc-app">
+
+    <h1 class="demo-title">Default</h1>
+    <div class="mn-accordion" id="accordion">
+
+        <!--Accordion item-->
+        <div class="accordion-item">
+            <div class="accordion-heading">
+                <h3>Section 1</h3>
+                <div class="icon">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="accordion-content">
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+        </div>
+        <!--Accordion item-->
+
+        <!--Accordion item-->
+        <div class="accordion-item">
+            <div class="accordion-heading">
+                <h3>Section 2</h3>
+                <div class="icon">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+        </div>
+        <!--Accordion item-->
+
+        <!--Accordion item-->
+        <div class="accordion-item">
+            <div class="accordion-heading">
+                <h3>Section 3</h3>
+                <div class="icon">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+        </div>
+        <!--Accordion item-->
+
+    </div>
+
+</div>
+
+    <br><br><br><hr><br><br><br>
+
+<div class="mn-acc-app">
+
+    <h1 class="demo-title">Multiple options enabled</h1>
+    <div class="mn-accordion" id="accordion-2">
+
+        <!--Accordion item-->
+        <div class="accordion-item">
+            <div class="accordion-heading">
+                <h3>Section 1</h3>
+                <div class="icon">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="accordion-content">
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+        </div>
+        <!--Accordion item-->
+
+        <!--Accordion item-->
+        <div class="accordion-item">
+            <div class="accordion-heading">
+                <h3>Section 2</h3>
+                <div class="icon">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+        </div>
+        <!--Accordion item-->
+
+        <!--Accordion item-->
+        <div class="accordion-item">
+            <div class="accordion-heading">
+                <h3>Section 3</h3>
+                <div class="icon">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+        </div>
+        <!--Accordion item-->
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="dist/js/mn-accordion.js"></script>
+<script>
+    (function () {
+        var accordion_1 = new Accordion(document.getElementById("accordion"), {
+            collapsible: false
+        });
+
+        var accordion_2 = new Accordion(document.getElementById("accordion-2"), {
+            multiple: true,
+            defaultOpenedIndexes: [1,2]
+        });
+    })();
+</script>
+
+</body>
+</html>

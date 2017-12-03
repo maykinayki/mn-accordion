@@ -1,0 +1,25 @@
+{
+  "name": "mn-accordion",
+  "description": "simple and beautiful accordion with es6 and scss",
+  "main": "dist/js/mn-accordion.js",
+  "authors": [
+    "mike <maykinaykii@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "accordion",
+    "es6",
+    "scss"
+  ],
+  "dependencies": {
+    "jquery": ">=1.6"
+  },
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

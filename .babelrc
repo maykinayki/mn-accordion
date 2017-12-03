@@ -1,0 +1,12 @@
+{
+    "env": {
+        "production": {
+            "presets": ["env", "babel-preset-minify"],
+            "plugins": ["transform-class-properties", "transform-object-assign", "transform-es2015-modules-umd"]
+        },
+        "development": {
+            "presets": ["env"],
+            "plugins": ["transform-class-properties", "transform-object-assign", "transform-es2015-modules-umd"]
+        }
+    }
+}
