@@ -113,7 +113,7 @@ By using bower you can also use the standalone UMD build by including `path/to/b
 | eventDelay | `Number` | **0** | Delay the event untill given milliseconds, usefull if eventName is mouseover |
 | collapsible | `Boolean` | **true** | Enable all accordion items can be closed at once |
 | multiple | `Boolean` | **false** | Enable multiple accordion item can be opened at once |
-| defaultOpenedIndexes | `Integer | Array<Integer>` | **0** | Make accordion item default opened with given index. Pass **-1** for close all items as default. Array of indexes accepted if *multiple* option is *true*|
+| defaultOpenedIndexes | `Integer \| Array<Integer>` | **0** | Make accordion item default opened with given index. Pass **-1** for close all items as default. Array of indexes accepted if *multiple* option is *true*|
 | slideSpeed | `Integer` | **200** | Slide up and down speed |
 | slideDownFn | `Function` | slideDownFn(el, slideSpeed){ <br> &nbsp;&nbsp;&nbsp;$(el).slideDown(slideSpeed); <br>} | Slide down function. We are using jQuery *slideDown* as default. You can override it if you are not using jQuery |
 | slideUpFn | `Function` | slideUpFn(el, slideSpeed){ <br> &nbsp;&nbsp;&nbsp;$(el).slideUp(slideSpeed); <br>} | Slide down function. We are using jQuery *slideUp* as default. You can override it if you are not using jQuery |
