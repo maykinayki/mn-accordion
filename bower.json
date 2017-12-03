@@ -11,6 +11,10 @@
     "es6",
     "scss"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maykinayki/mn-accordion.git"
+  },
   "dependencies": {
     "jquery": ">=1.6"
   },
