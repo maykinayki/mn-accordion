@@ -39,7 +39,6 @@ bower install mn-accordion --save
 
 By using bower or CDN you can also use the standalone UMD build by including `path/to/bower_components/mn-accordion/dist/js/mn-accordion.min.js` and `path/to/bower_components/mn-accordion/dist/css/mn-accordion.min.css` in your page.
  <br>
- You also need to include `jQuery` globally with version bigger than `1.6`.
 
 ```html
 
@@ -95,7 +94,6 @@ By using bower or CDN you can also use the standalone UMD build by including `pa
     
         </div>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
     <script src="path/to/bower_components/mn-accordion/dist/js/mn-accordion.min.js"></script>
     
     <script>
@@ -120,13 +118,9 @@ By using bower or CDN you can also use the standalone UMD build by including `pa
 | multiple | `Boolean` | **false** | Enable multiple accordion item can be opened at once |
 | defaultOpenedIndexes | `Integer \| Array<Integer>` | **0** | Make accordion item default opened with given index. Pass **-1** for close all items as default. Array of indexes accepted if *multiple* option is *true*|
 | slideSpeed | `Integer` | **200** | Slide up and down speed |
-| slideDownFn | `Function` | slideDownFn(el, slideSpeed){ <br> &nbsp;&nbsp;&nbsp;$(el).slideDown(slideSpeed); <br>} | Slide down function. We are using jQuery *slideDown* as default. You can override it if you are not using jQuery |
-| slideUpFn | `Function` | slideUpFn(el, slideSpeed){ <br> &nbsp;&nbsp;&nbsp;$(el).slideUp(slideSpeed); <br>} | Slide down function. We are using jQuery *slideUp* as default. You can override it if you are not using jQuery |
+| slideDownFn | `Function` | slideDownFn(el, slideSpeed) {} | Slide down function. We are using css transitions |
+| slideUpFn | `Function` | slideUpFn(el, slideSpeed) {} | Slide up function. We are using css transitions |
 
-# TODO
-
-1. Remove jQuery dependency - The only dependency for this package is jQuery. We are using it for .slideDown() and .slideUp() methods
-2. Create .slideUp() and .slideDown() methods in pure vanilla JS. We are open for this contribution
 
 # License
 
