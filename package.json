@@ -1,6 +1,6 @@
 {
   "name": "mn-accordion",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "simple and beautiful accordion with es6 and scss",
   "main": "dist/js/mn-accordion.js",
   "keywords": [
