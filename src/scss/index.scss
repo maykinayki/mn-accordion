@@ -39,13 +39,21 @@ $border: 1px solid lighten( $color, 50% );
             }
         }
         .accordion-content {
-            padding: 20px;
+            overflow: hidden;
+            height: 0;
             color: #333;
+            transition-property: all;
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
+            transition-delay: initial;
             p:first-child {
                 margin-top: 0;
             }
             p:last-child {
                 margin-bottom: 0;
+            }
+            > * {
+                padding: 20px;
             }
         }
         &.state-open {
