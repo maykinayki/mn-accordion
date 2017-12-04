@@ -60,7 +60,7 @@
     }();
 
     var global = typeof window !== "undefined" ? window : undefined;
-    var $ = global.$ || global.jQuery; //jQuery only used for slideDown and slideUp animations. You can override it in Accordion options
+    var document = global.document;
 
     var Accordion = function () {
         function Accordion(element) {
@@ -78,19 +78,39 @@
                 defaultOpenedIndexes: 0, // -1 for close all as default, array of indexes accepted if multiple option is true
 
                 //slide functions with jQuery. If you don't include jQuery in your website please override these functions
-                slideSpeed: 200,
-                slideDownFn: function slideDownFn(el, slideSpeed) {
-                    $ && $(el).slideDown(slideSpeed);
+                slideDuration: 200,
+                slideDownFn: function slideDownFn(el, slideDuration) {
+                    el.style.WebkitTransitionDuration = slideDuration + "ms";
+                    el.style.transitionDuration = slideDuration + "ms";
+
+                    el.style.height = "auto";
+                    var height = el.scrollHeight;
+                    el.style.height = "0";
+                    global.setTimeout(function () {
+                        el.style.height = height + "px";
+                    }, 0);
                 },
-                slideUpFn: function slideUpFn(el, slideSpeed) {
-                    $ && $(el).slideUp(slideSpeed);
+                slideUpFn: function slideUpFn(el, slideDuration) {
+                    el.style.WebkitTransitionDuration = slideDuration + "ms";
+                    el.style.transitionDuration = slideDuration + "ms";
+                    global.setTimeout(function () {
+                        el.style.height = "0";
+                    }, 0);
                 }
             };
             self.options = _extends({}, self.defaultOptions, options);
             self.accordion = element;
             self.accordionItemsLength = self.accordion.childElementCount;
 
-            self.init();
+            if (document.readyState === "complete") {
+                self.init();
+            } else {
+                document.addEventListener('readystatechange', function (event) {
+                    if (event.target.readyState === "complete") {
+                        self.init();
+                    }
+                }, false);
+            }
         }
 
         _createClass(Accordion, [{
@@ -139,7 +159,7 @@
                     self.closeRestAccordionItems(itemIndex);
                 }
 
-                self.options.slideDownFn(accordionItemContent, self.options.slideSpeed);
+                self.options.slideDownFn(accordionItemContent, self.options.slideDuration);
             }
         }, {
             key: "openAccordionItemByIndex",
@@ -158,7 +178,7 @@
                 item.isOpened = false;
                 item.classList.remove("state-open");
 
-                self.options.slideUpFn(accordionItemContent, self.options.slideSpeed);
+                self.options.slideUpFn(accordionItemContent, self.options.slideDuration);
             }
         }, {
             key: "closeAccordionItemByIndex",
