@@ -108,7 +108,7 @@ By using bower or CDN you can also use the standalone UMD build by including `pa
 
 ```
 
-## API, events and available options:
+## Available options:
 
 | Parameter | Type | Value | Description |
 |:---|:---|:---|:---|
@@ -120,6 +120,13 @@ By using bower or CDN you can also use the standalone UMD build by including `pa
 | slideDuration | `Integer` | **200** | Slide up and down slideDuration by ms |
 | slideDownFn | `Function` | slideDownFn(el, slideDuration) {} | Slide down function. We are using css transitions |
 | slideUpFn | `Function` | slideUpFn(el, slideDuration) {} | Slide up function. We are using css transitions |
+
+## Available methods for *Accordion* instance:
+
+| Method | Parameters | Return | Description |
+|:---|:---|:---|:---|
+| openAccordionItemByIndex | `(index: Integer)` | `Void` | Open accordion item by given index |
+| closeAccordionItemByIndex | `(index: Integer)` | `Void` | Close accordion item by given index |
 
 
 # License
