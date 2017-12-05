@@ -117,9 +117,9 @@ By using bower or CDN you can also use the standalone UMD build by including `pa
 | collapsible | `Boolean` | **true** | Enable all accordion items can be closed at once |
 | multiple | `Boolean` | **false** | Enable multiple accordion item can be opened at once |
 | defaultOpenedIndexes | `Integer \| Array<Integer>` | **0** | Make accordion item default opened with given index. Pass **-1** for close all items as default. Array of indexes accepted if *multiple* option is *true*|
-| slideSpeed | `Integer` | **200** | Slide up and down speed |
-| slideDownFn | `Function` | slideDownFn(el, slideSpeed) {} | Slide down function. We are using css transitions |
-| slideUpFn | `Function` | slideUpFn(el, slideSpeed) {} | Slide up function. We are using css transitions |
+| slideDuration | `Integer` | **200** | Slide up and down slideDuration by ms |
+| slideDownFn | `Function` | slideDownFn(el, slideDuration) {} | Slide down function. We are using css transitions |
+| slideUpFn | `Function` | slideUpFn(el, slideDuration) {} | Slide up function. We are using css transitions |
 
 
 # License
